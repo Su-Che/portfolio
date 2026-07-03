@@ -195,7 +195,7 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── CAPABILITIES ── */
 .capabilities-section { }
-.capabilities-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); padding: 32px 64px 0; }
+.capabilities-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); padding: 32px 0 0; }
 .capabilities { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-top: 20px; }
 .cap-card { padding: 52px 44px; border-right: 1px solid var(--border); }
 .cap-card:last-child { border-right: none; }
@@ -247,13 +247,13 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── BLOGS ── */
 .blogs { border-bottom: 1px solid var(--border); }
-.blogs-header { padding: 80px 80px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
+.blogs-header { padding: 80px 64px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
 .blogs-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
 .blogs-title { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px); letter-spacing: -.03em; color: var(--text); line-height: 1.1; }
 .blogs-cta-link { font-size: 14px; font-weight: 500; color: var(--text-2); text-decoration: none; white-space: nowrap; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color .2s, border-color .2s; flex-shrink: 0; }
 .blogs-cta-link:hover { color: var(--text); border-color: var(--text); }
 .blogs-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-.blog-card { padding: 48px 56px; border-right: 1px solid var(--border); text-decoration: none; display: flex; flex-direction: column; gap: 0; transition: background .2s; }
+.blog-card { padding: 48px 64px; border-right: 1px solid var(--border); text-decoration: none; display: flex; flex-direction: column; gap: 0; transition: background .2s; }
 .blog-card:last-child { border-right: none; }
 .blog-card:hover { background: var(--fog); }
 .blog-card-num { font-family: var(--serif); font-size: 13px; font-style: italic; color: var(--text-3); margin-bottom: 28px; }
@@ -265,13 +265,13 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── TALKS ── */
 .talks { border-bottom: 1px solid var(--border); }
-.talk-header { padding: 80px 80px 40px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
+.talk-header { padding: 80px 64px 40px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
 .talk-header-left { }
 .talks-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
 .talks-title { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px); letter-spacing: -.03em; color: var(--text); line-height: 1.1; }
 .talk-card { display: grid; grid-template-columns: 1fr 1fr; border-top: none; }
-.talk-card-left { padding: 64px 80px; border-right: 1px solid var(--border); }
-.talk-card-right { padding: 64px 80px; }
+.talk-card-left { padding: 64px 64px; border-right: 1px solid var(--border); }
+.talk-card-right { padding: 64px 64px; }
 .talk-event { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
 .talk-event-badge { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--white); background: var(--text); padding: 5px 12px; border-radius: 100px; }
 .talk-event-meta { font-size: 13px; color: var(--text-3); }
@@ -757,6 +757,8 @@ thead .bp-sticky { z-index: 4; }
   .blog-card { border-right: none; border-bottom: 1px solid var(--border); padding: 40px 32px; }
   .blog-card:last-child { border-bottom: none; }
   .blogs-header { padding: 48px 32px 32px; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .talk-card-left { padding: 48px 32px; }
+  .talk-card-right { padding: 48px 32px; }
   .talk-card { grid-template-columns: 1fr; }
   .resume-cta { grid-template-columns: 1fr; }
   .resume-cta-left { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); padding: 64px 32px; }
@@ -871,14 +873,14 @@ thead .bp-sticky { z-index: 4; }
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
-  <a href="index.html" class="nav-logo">Suganth Chellamuthu</a>
+  <a href="#top" class="nav-logo">Suganth Chellamuthu</a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html#work">Work</a></li>
+    <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#writing">Blogs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#resume" class="nav-cta">View résumé</a>
+  <a href="resume.html" class="nav-cta">View résumé</a>
 </nav>
 
 <!-- HERO -->
@@ -887,7 +889,7 @@ thead .bp-sticky { z-index: 4; }
   <h1 class="hero-h1">Designing digital<br>products that solve<br><em>real problems</em></h1>
   <p class="hero-sub">I play various roles to design digital products that solve problems and drive business value — from zero-to-one concepts to scaled systems used by millions.</p>
   <div class="hero-actions">
-    <a href="index.html#work" class="btn btn-dark">View case studies</a>
+    <a href="#work" class="btn btn-dark">View case studies</a>
     <a href="#about" class="btn btn-ghost">About me</a>
   </div>
 </section>
@@ -944,7 +946,7 @@ thead .bp-sticky { z-index: 4; }
 
 <!-- CAPABILITIES -->
 <div class="capabilities-section">
-  <p class="capabilities-eyebrow">What I do</p>
+  <div class="wrap" style="padding: 0 64px;"><p class="capabilities-eyebrow">What I do</p></div>
   <div class="capabilities wrap">
     <div class="cap-card">
       <div class="cap-icon">◎</div>
@@ -1124,8 +1126,8 @@ thead .bp-sticky { z-index: 4; }
 </div><!-- /work-grid -->
 
 <!-- SPECULATIVE WORK -->
-<div class="speculative wrap">
-  <div class="spec-header">
+<div class="speculative">
+  <div class="spec-header wrap">
     <div>
       <p class="work-section-label">Self-directed initiatives</p>
       <h2 class="work-section-title">Speculative work</h2>
@@ -1483,7 +1485,7 @@ function handleTalkSubmit(e) {
         </div>
       </div>
       <div class="footer-contact-actions">
-        <a href="#resume" class="btn-resume">View résumé →</a>
+        <a href="resume.html" class="btn-resume">View résumé →</a>
         <a href="mailto:suganthgct@gmail.com" class="resume-cta-email">suganthgct@gmail.com</a>
       </div>
     </div>
@@ -1526,161 +1528,6 @@ function handleTalkSubmit(e) {
 <!-- ════════════════════════════════════════ -->
 <!--  CASE STUDY 1 — AI Cancer Drug Discovery -->
 <!-- ════════════════════════════════════════ -->
-
-
-<div class="resume-page" id="resume">
-
-  <nav class="resume-page-nav">
-    <a href="index.html" class="resume-page-nav-logo">Suganth Chellamuthu</a>
-    <div class="resume-page-nav-actions">
-      <a href="index.html" class="resume-page-back">← Back to portfolio</a>
-      <button class="resume-print" onclick="window.print()">Download as PDF ↓</button>
-    </div>
-  </nav>
-
-  <div class="resume-layout">
-
-    <!-- LEFT SIDEBAR — dark -->
-    <div class="resume-sidebar">
-
-      <h1 class="resume-sidebar-name">Suganth<br>Chellamuthu</h1>
-      <p class="resume-sidebar-headline">Digital Product Designer · 14+ years</p>
-
-      <div class="resume-sidebar-contact">
-        <a href="mailto:suganthgct@gmail.com">suganthgct@gmail.com</a>
-        <a href="tel:+919972457131">+91 99724 57131</a>
-        <a href="https://www.linkedin.com/in/hellosuganth" target="_blank" rel="noopener">linkedin.com/in/hellosuganth</a>
-      </div>
-
-      <div class="resume-sidebar-section">
-        <p class="resume-sidebar-label">Profile</p>
-        <p class="resume-sidebar-summary">Digital product designer with a love for functional and elegant designs. Applying agile and lean UX methods for 14+ years crafting user-centred products with better problem and market fit.</p>
-        <p class="resume-sidebar-summary" style="margin-top:12px;">Strong in UX design, user research, and service design. I enjoy partnering to solve real problems and facilitating teams to create exceptional experiences.</p>
-      </div>
-
-      <div class="resume-sidebar-section">
-        <p class="resume-sidebar-label">Design Skills</p>
-        <div class="resume-skills">
-          <span class="resume-skill">Design Leadership</span>
-          <span class="resume-skill">UX Design</span>
-          <span class="resume-skill">User Research</span>
-          <span class="resume-skill">Service Design</span>
-          <span class="resume-skill">Product Strategy</span>
-        </div>
-      </div>
-
-      <div class="resume-sidebar-section">
-        <p class="resume-sidebar-label">Tools &amp; Technologies</p>
-        <div class="resume-skill-group">
-          <div class="resume-skill-group-label">Software</div>
-          <div class="resume-skills">
-            <span class="resume-skill">Figma</span>
-            <span class="resume-skill">Sketch</span>
-            <span class="resume-skill">Adobe CC</span>
-          </div>
-        </div>
-        <div class="resume-skill-group">
-          <div class="resume-skill-group-label">Web</div>
-          <div class="resume-skills">
-            <span class="resume-skill">HTML5</span>
-            <span class="resume-skill">CSS3</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-sidebar-section">
-        <p class="resume-sidebar-label">Education</p>
-        <div class="resume-edu-item">
-          <div class="resume-edu-degree">MDes, Strategic Design Management</div>
-          <div class="resume-edu-school">National Institute of Design, Ahmedabad</div>
-          <div class="resume-edu-dates">2010 – 2012</div>
-        </div>
-        <div class="resume-edu-item">
-          <div class="resume-edu-degree">BTech, Industrial Bio-Technology</div>
-          <div class="resume-edu-school">Government College of Technology, Coimbatore</div>
-          <div class="resume-edu-dates">2003 – 2007</div>
-        </div>
-      </div>
-
-    </div><!-- /resume-sidebar -->
-
-    <!-- RIGHT MAIN — light -->
-    <div class="resume-main">
-
-      <div class="resume-main-section">
-        <p class="resume-main-label">Experience</p>
-
-        <div class="resume-exp-item">
-          <div class="resume-exp-role">Lead Experience Designer &amp; Head of Design (India)</div>
-          <div class="resume-exp-meta">
-            <span class="resume-exp-org">ThoughtWorks</span>
-            <span class="resume-exp-dot"></span>
-            <span class="resume-exp-dates">2013 – Present</span>
-          </div>
-        </div>
-
-        <div class="resume-exp-item">
-          <div class="resume-exp-role">UX Designer &amp; Usability Consultant</div>
-          <div class="resume-exp-meta">
-            <span class="resume-exp-org">Tata Consultancy Services</span>
-            <span class="resume-exp-dot"></span>
-            <span class="resume-exp-dates">2012 – 2013</span>
-          </div>
-        </div>
-
-        <div class="resume-exp-item">
-          <div class="resume-exp-role">Brand Consultant Intern</div>
-          <div class="resume-exp-meta">
-            <span class="resume-exp-org">Unilever</span>
-            <span class="resume-exp-dot"></span>
-            <span class="resume-exp-dates">2012</span>
-          </div>
-        </div>
-
-        <div class="resume-exp-item">
-          <div class="resume-exp-role">Application Developer</div>
-          <div class="resume-exp-meta">
-            <span class="resume-exp-org">Tata Consultancy Services</span>
-            <span class="resume-exp-dot"></span>
-            <span class="resume-exp-dates">2007 – 2010</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-main-section">
-        <p class="resume-main-label">Selected Works</p>
-
-        <div class="resume-work-item">
-          <div class="resume-work-title">Empowering educators for improved school management — UK</div>
-          <div class="resume-work-desc">Collaborated with the head of product to improve communication, maintain quality, and foster a growth-oriented team while contributing to two key product components — a seamless teacher experience for taking register and accessing pupil profile.</div>
-        </div>
-
-        <div class="resume-work-item">
-          <div class="resume-work-title">Modest fashion retailer — Marketplace experience, Turkey</div>
-          <div class="resume-work-desc">Crafting an enhanced marketplace experience for a well-known retailer with a niche market segment. Leading a team of designers and collaborating with CxOs to develop strategies for improved customer and supplier acquisitions in new markets.</div>
-        </div>
-
-        <div class="resume-work-item">
-          <div class="resume-work-title">Reimagining retail forecasting for a large retailer — US</div>
-          <div class="resume-work-desc">Tool designed to keep financial planners ahead of the game by providing upfront predictive analysis and robust risk management, supported by real-time consumer sales data.</div>
-        </div>
-
-        <div class="resume-work-item">
-          <div class="resume-work-title">Designing a premium and exclusive delivery service — UK</div>
-          <div class="resume-work-desc">Designing an exclusive branded delivery service to create exemplary experiences for premium customers. Creating a service blueprint, mapping channels and touchpoints, and outlining team actions.</div>
-        </div>
-
-        <div class="resume-work-item">
-          <div class="resume-work-title">Improving the post-purchase customer experience — UK</div>
-          <div class="resume-work-desc">Collaborating with CxOs and the product team to craft a service map, identifying issues in the post-purchase journey and coming up with recommendations strategically categorised as 'now,' 'next,' and 'later.'</div>
-        </div>
-
-      </div>
-
-    </div><!-- /resume-main -->
-
-  </div><!-- /resume-layout -->
-</div><!-- /resume-page -->
 
 <script>
 /* ── BLUEPRINT DRAG SCROLL ── */

@@ -195,7 +195,7 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── CAPABILITIES ── */
 .capabilities-section { }
-.capabilities-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); padding: 32px 64px 0; }
+.capabilities-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); padding: 32px 0 0; }
 .capabilities { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-top: 20px; }
 .cap-card { padding: 52px 44px; border-right: 1px solid var(--border); }
 .cap-card:last-child { border-right: none; }
@@ -247,13 +247,13 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── BLOGS ── */
 .blogs { border-bottom: 1px solid var(--border); }
-.blogs-header { padding: 80px 80px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
+.blogs-header { padding: 80px 64px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
 .blogs-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
 .blogs-title { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px); letter-spacing: -.03em; color: var(--text); line-height: 1.1; }
 .blogs-cta-link { font-size: 14px; font-weight: 500; color: var(--text-2); text-decoration: none; white-space: nowrap; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color .2s, border-color .2s; flex-shrink: 0; }
 .blogs-cta-link:hover { color: var(--text); border-color: var(--text); }
 .blogs-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-.blog-card { padding: 48px 56px; border-right: 1px solid var(--border); text-decoration: none; display: flex; flex-direction: column; gap: 0; transition: background .2s; }
+.blog-card { padding: 48px 64px; border-right: 1px solid var(--border); text-decoration: none; display: flex; flex-direction: column; gap: 0; transition: background .2s; }
 .blog-card:last-child { border-right: none; }
 .blog-card:hover { background: var(--fog); }
 .blog-card-num { font-family: var(--serif); font-size: 13px; font-style: italic; color: var(--text-3); margin-bottom: 28px; }
@@ -265,13 +265,13 @@ body { font-family: var(--sans); background: var(--white); color: var(--text); f
 
 /* ── TALKS ── */
 .talks { border-bottom: 1px solid var(--border); }
-.talk-header { padding: 80px 80px 40px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
+.talk-header { padding: 80px 64px 40px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
 .talk-header-left { }
 .talks-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
 .talks-title { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 44px); letter-spacing: -.03em; color: var(--text); line-height: 1.1; }
 .talk-card { display: grid; grid-template-columns: 1fr 1fr; border-top: none; }
-.talk-card-left { padding: 64px 80px; border-right: 1px solid var(--border); }
-.talk-card-right { padding: 64px 80px; }
+.talk-card-left { padding: 64px 64px; border-right: 1px solid var(--border); }
+.talk-card-right { padding: 64px 64px; }
 .talk-event { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
 .talk-event-badge { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--white); background: var(--text); padding: 5px 12px; border-radius: 100px; }
 .talk-event-meta { font-size: 13px; color: var(--text-3); }
@@ -757,6 +757,8 @@ thead .bp-sticky { z-index: 4; }
   .blog-card { border-right: none; border-bottom: 1px solid var(--border); padding: 40px 32px; }
   .blog-card:last-child { border-bottom: none; }
   .blogs-header { padding: 48px 32px 32px; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .talk-card-left { padding: 48px 32px; }
+  .talk-card-right { padding: 48px 32px; }
   .talk-card { grid-template-columns: 1fr; }
   .resume-cta { grid-template-columns: 1fr; }
   .resume-cta-left { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); padding: 64px 32px; }
@@ -944,7 +946,7 @@ thead .bp-sticky { z-index: 4; }
 
 <!-- CAPABILITIES -->
 <div class="capabilities-section">
-  <p class="capabilities-eyebrow">What I do</p>
+  <div class="wrap" style="padding: 0 64px;"><p class="capabilities-eyebrow">What I do</p></div>
   <div class="capabilities wrap">
     <div class="cap-card">
       <div class="cap-icon">◎</div>
@@ -1124,8 +1126,8 @@ thead .bp-sticky { z-index: 4; }
 </div><!-- /work-grid -->
 
 <!-- SPECULATIVE WORK -->
-<div class="speculative wrap">
-  <div class="spec-header">
+<div class="speculative">
+  <div class="spec-header wrap">
     <div>
       <p class="work-section-label">Self-directed initiatives</p>
       <h2 class="work-section-title">Speculative work</h2>
